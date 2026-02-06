@@ -8,24 +8,24 @@ Date: February 6, 2026
 
 ✅ DONE
 Backend
-[x] Setup Spring Boot Project - Commit: [HASH]
+[x] Setup Spring Boot Project - Commit: 8d50e84
 
-[x] Database Configuration (Supabase/PostgreSQL) - Commit: [HASH]
+[x] Database Configuration (Supabase/PostgreSQL) - Commit: 8d50e84
 
-[x] User Entity & Repository - Commit: [HASH]
+[x] User Entity & Repository - Commit: 8d50e84
 
-[x] Password Encryption (BCrypt) - Commit: [HASH]
+[x] Password Encryption (BCrypt) - Commit: 8d50e84
 
-[x] Authentication Endpoints (Register, Login) - Commit: [HASH]
+[x] Authentication Endpoints (Register, Login) - Commit: 8d50e84
 
-[x] Protected User Endpoint (GET /api/user/me) - Commit: [HASH]
+[x] Protected User Endpoint (GET /api/user/me) - Commit: 8d50e84
 
 Web Application
 [x] Setup React Project - Commit: 1c443df
 
-[x] Authentication Service (Axios) - Commit: [HASH]
+[x] Authentication Service (Axios) - Commit: 8d50e84
 
-[x] Protected Route Component - Commit: [HASH]
+[x] Protected Route Component - Commit: 8d50e84
 
 [x] Register Page - Commit: 1c443df
 
@@ -36,11 +36,11 @@ Web Application
 [x] Logout Functionality - Commit: 1c443df
 
 Documentation
-[x] Update FRS PDF (Web UI Screenshots) - Commit: [HASH]
+[x] Update FRS PDF (Web UI Screenshots) - Commit: 1c443df
 
 [x] Include ERD & UML Diagrams - Commit: 1c443df
 
-[x] Repository Structure Review - Commit: [HASH]
+[x] Repository Structure Review - Commit: 8d50e84
 
 📋 TODO
 [ ] Mobile Application Implementation (Lab 3)
