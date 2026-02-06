@@ -1,19 +1,53 @@
-# Task Checklist - IT342_G5_Benolirao_Lab1
+MilestoneMind - Task Checklist (Lab Session 2)
+📌 Project Information
+Repository: IT342_G5_Benolirao_Lab1
 
-## ✅ DONE
-- [x] Web Application: Register Page (`1c443df`)
-- [x] Web Application: Login Page (`1c443df`)
-- [x] Web Application: Dashboard & Profile UI (`1c443df`)
-- [x] Web Application: Logout Functionality (`1c443df`)
-- [x] Documentation: Update FRS PDF with Web UI Screenshots (`1c443df`)
-- [x] Documentation: Include ERD and UML Diagrams (`1c443df`)
+Session: Lab 2 - User Registration and Authentication System
 
-## 🚧 IN-PROGRESS
-- [ ] Backend: Spring Boot Project Initialization
-- [ ] Backend: MySQL Database Connection
+Date: February 6, 2026
 
-## 📅 TODO
-- [ ] Backend: POST /api/auth/register
-- [ ] Backend: POST /api/auth/login
-- [ ] Backend: GET /api/user/me (Protected)
-- [ ] Backend: Password encryption (BCrypt.)
+✅ DONE
+Backend
+[x] Setup Spring Boot Project - Commit: [HASH]
+
+[x] Database Configuration (Supabase/PostgreSQL) - Commit: [HASH]
+
+[x] User Entity & Repository - Commit: [HASH]
+
+[x] Password Encryption (BCrypt) - Commit: [HASH]
+
+[x] Authentication Endpoints (Register, Login) - Commit: [HASH]
+
+[x] Protected User Endpoint (GET /api/user/me) - Commit: [HASH]
+
+Web Application
+[x] Setup React Project - Commit: 1c443df
+
+[x] Authentication Service (Axios) - Commit: [HASH]
+
+[x] Protected Route Component - Commit: [HASH]
+
+[x] Register Page - Commit: 1c443df
+
+[x] Login Page - Commit: 1c443df
+
+[x] Dashboard/Profile Page - Commit: 1c443df
+
+[x] Logout Functionality - Commit: 1c443df
+
+Documentation
+[x] Update FRS PDF (Web UI Screenshots) - Commit: [HASH]
+
+[x] Include ERD & UML Diagrams - Commit: 1c443df
+
+[x] Repository Structure Review - Commit: [HASH]
+
+📋 TODO
+[ ] Mobile Application Implementation (Lab 3)
+
+📊 Summary
+Completed: 16/17 tasks
+
+Completion Rate: 94%
+
+Last Updated: February 6, 2026
