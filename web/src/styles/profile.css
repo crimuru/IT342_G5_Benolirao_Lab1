@@ -1,0 +1,129 @@
+.profile-page {
+  background-color: #ffffff; /* Clean white back as requested */
+  min-height: 100vh;
+  padding: 60px 0;
+}
+
+.profile-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* User Identity Section */
+.user-identity-box {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.avatar-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  border: 2px solid #800000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #800000;
+}
+
+.edit-avatar-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #800000;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.identity-info h2 { color: #800000; margin: 0; font-size: 1.8rem; }
+.user-email-sub { color: #666; margin: 2px 0; }
+.user-role-sub { color: #333; font-weight: 700; }
+
+/* Details Card */
+.profile-details-card {
+  background: white;
+  border-radius: 8px 8px 24px 8px; /* Matching Dashboard card style */
+  border: 1px solid #eee;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.card-top-bar {
+  padding: 20px 30px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-top-bar h3 { color: #800000; margin: 0; font-size: 1.2rem; }
+
+.btn-edit-toggle {
+  background: transparent;
+  border: 1px solid #800000;
+  color: #800000;
+  padding: 6px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.card-inner-body { padding: 30px; }
+.form-instruction { font-size: 0.9rem; color: #888; margin-bottom: 25px; }
+.section-title { font-size: 0.85rem; color: #333; letter-spacing: 1px; margin-bottom: 20px; font-weight: 800; }
+
+/* Grid for inputs */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.input-group-field { display: flex; flex-direction: column; gap: 8px; }
+.input-group-field label { font-size: 0.8rem; font-weight: 700; color: #800000; }
+.input-group-field input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+/* Save/Cancel Buttons */
+.form-save-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn-cancel-flat {
+  background: white;
+  border: 1px solid #ccc;
+  color: #ff4d4d;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-save-maroon {
+  background: #800000;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
