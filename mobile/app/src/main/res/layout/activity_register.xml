@@ -1,46 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="24dp"
+    android:padding="32dp"
     android:gravity="center">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#800000"
+        android:layout_marginBottom="24dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create Account"
-        android:textSize="24sp"
+        android:text="MilestoneMind"
+        android:textSize="28sp"
         android:textStyle="bold"
+        android:textColor="#800000"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join to track your achievements"
+        android:textSize="14sp"
+        android:textColor="#666666"
         android:layout_marginBottom="32dp"/>
 
-    <EditText
-        android:id="@+id/etRegName"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Full Name"
-        android:inputType="textPersonName"
+        android:text="First Name"
+        android:textColor="#800000"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp"/>
+    <EditText
+        android:id="@+id/etRegFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="First Name"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
         android:layout_marginBottom="16dp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:textColor="#800000"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp"/>
+    <EditText
+        android:id="@+id/etRegLastName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Last Name"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:textColor="#800000"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp"/>
     <EditText
         android:id="@+id/etRegEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email Address"
+        android:layout_height="50dp"
+        android:hint="you@example.com"
         android:inputType="textEmailAddress"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
         android:layout_marginBottom="16dp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#800000"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp"/>
     <EditText
         android:id="@+id/etRegPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
+        android:layout_height="50dp"
+        android:hint="Create a password"
         android:inputType="textPassword"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
         android:layout_marginBottom="24dp"/>
 
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:backgroundTint="#800000"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvGoToLogin"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register"/>
+        android:text="Already a member? Sign In"
+        android:textColor="#777777"
+        android:textSize="13sp"
+        android:layout_marginTop="20dp"/>
+
 </LinearLayout>
+</ScrollView>

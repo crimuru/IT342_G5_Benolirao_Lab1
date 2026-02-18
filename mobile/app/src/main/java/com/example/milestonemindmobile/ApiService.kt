@@ -18,6 +18,15 @@ interface ApiService {
     suspend fun logoutUser(): Response<Unit>
 }
 
-// These match the DTOs in your Spring Boot project
-data class LoginRequest(val email: String, val password: String)
-data class RegisterRequest(val name: String, val email: String, val password: String)
+// These match the DTOs in your Spring Boot project exactly
+data class LoginRequest(
+    val email: String,
+    val password: String
+)
+
+data class RegisterRequest(
+    val firstName: String, // Matches React and User.java
+    val lastName: String,  // Matches React and User.java
+    val email: String,
+    val password: String
+)

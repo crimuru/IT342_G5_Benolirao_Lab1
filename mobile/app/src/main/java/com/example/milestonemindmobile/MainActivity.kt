@@ -1,5 +1,6 @@
 package com.example.milestonemindmobile
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -15,13 +16,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // 1. Link UI elements to the code
+        // 1. Link UI elements to match your Maroon-themed XML
         val emailField = findViewById<EditText>(R.id.etEmail)
         val passwordField = findViewById<EditText>(R.id.etPassword)
         val loginButton = findViewById<Button>(R.id.btnLogin)
         val registerLink = findViewById<TextView>(R.id.tvGoToRegister)
 
-        // 2. Handle Login Logic
+        // 2. Handle Login Logic (Matches React axios.post)
         loginButton.setOnClickListener {
             val email = emailField.text.toString()
             val password = passwordField.text.toString()
@@ -31,30 +32,35 @@ class MainActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            // Perform the network call in a background thread
             lifecycleScope.launch {
                 try {
+                    // Hits your @PostMapping("/api/auth/login")
                     val loginRequest = LoginRequest(email, password)
                     val response = RetrofitClient.instance.loginUser(loginRequest)
 
                     if (response.isSuccessful) {
-                        Toast.makeText(this@MainActivity, "Welcome back!", Toast.LENGTH_SHORT).show()
+                        // Equivalent to localStorage.setItem("user", ...)
+                        val sharedPref = getSharedPreferences("MilestoneMindPrefs", Context.MODE_PRIVATE)
+                        with(sharedPref.edit()) {
+                            putString("user_email", email)
+                            putBoolean("isLoggedIn", true)
+                            apply()
+                        }
 
-                        // 3. Move to the Dashboard (The Protected Screen)
-                        val intent = Intent(this@MainActivity, DashboardActivity::class.java)
-                        startActivity(intent)
-                        finish() // Close login so 'Back' doesn't return here
+                        // SUCCESS: Just show a message, do not try to open Dashboard yet
+                        Toast.makeText(this@MainActivity, "Login Success!", Toast.LENGTH_SHORT).show()
+
                     } else {
-                        Toast.makeText(this@MainActivity, "Invalid credentials", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@MainActivity, "Invalid email or password", Toast.LENGTH_SHORT).show()
                     }
                 } catch (e: Exception) {
-                    // Check if Spring Boot is actually running in VS Code
+                    // Ensure you are using http://10.0.2.2:8080/ for Emulator
                     Toast.makeText(this@MainActivity, "Server Error: ${e.message}", Toast.LENGTH_LONG).show()
                 }
             }
         }
 
-        // 4. Navigate to Register Screen
+        // 3. Navigate to Register Screen (Matches React <Link to="/register">)
         registerLink.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)

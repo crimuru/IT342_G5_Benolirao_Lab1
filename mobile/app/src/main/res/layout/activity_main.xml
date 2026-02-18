@@ -3,45 +3,85 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
+    android:padding="32dp"
+    android:background="#ffffff"
     android:gravity="center">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#800000"
+        android:layout_marginBottom="24dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MilestoneMind Login"
-        android:textSize="24sp"
+        android:text="MilestoneMind"
+        android:textSize="28sp"
         android:textStyle="bold"
+        android:textColor="#800000"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in to your personal logger"
+        android:textSize="14sp"
+        android:textColor="#666666"
         android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:textColor="#800000"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
 
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email Address"
+        android:layout_height="50dp"
+        android:hint="you@example.com"
         android:inputType="textEmailAddress"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
         android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#800000"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
+        android:layout_height="50dp"
+        android:hint="••••••••"
         android:inputType="textPassword"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
         android:layout_marginBottom="24dp"/>
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login"/>
+        android:layout_height="55dp"
+        android:text="Login"
+        android:backgroundTint="#800000"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textAllCaps="false"/>
 
     <TextView
         android:id="@+id/tvGoToRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Don't have an account? Register"
-        android:textColor="@color/purple_500"
-        android:layout_marginTop="16dp"
-        android:padding="8dp"/>
+        android:textColor="#800000"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
 </LinearLayout>
