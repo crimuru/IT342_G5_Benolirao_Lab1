@@ -1,10 +1,10 @@
-MilestoneMind - Task Checklist (Lab Session 2)
+MilestoneMind - Task Checklist (Lab Session 3 Final)
 📌 Project Information
 Repository: IT342_G5_Benolirao_Lab1
 
-Session: Lab 2 - User Registration and Authentication System
+Session: Lab 3 - Mobile Application Implementation
 
-Date: February 6, 2026
+Date: February 18, 2026
 
 ✅ DONE
 Backend
@@ -35,19 +35,30 @@ Web Application
 
 [x] Logout Functionality - Commit: 1c443df
 
-Documentation
-[x] Update FRS PDF (Web UI Screenshots) - Commit: 1c443df
+Mobile Application (Lab 3)
+[x] Android Project Setup (Kotlin) - Commit: e0d3579
 
-[x] Include ERD & UML Diagrams - Commit: 1c443df
+[x] Register & Login UI - Commit: e0d3579
 
-[x] Repository Structure Review - Commit: 8d50e84
+[x] Dashboard & RecyclerView - Commit: e0d3579
+
+[x] Profile UI & Edit Toggle Logic - Commit: e0d3579
+
+[x] Logout Implementation (Maroon UI) - Commit: e0d3579
+
+Documentation & Structure
+[x] Repository Structure Review (Clean root) - Commit: 419c43f
+
+[x] Final Documentation (Mobile Screenshots added to FRS) - Commit: 419c43f
+
+[x] Root .gitignore Implementation - Commit: 419c43f
 
 📋 TODO
-[ ] Mobile Application Implementation (Lab 3)
+[ ] Integrate Retrofit for Backend API Connection
 
 📊 Summary
-Completed: 16/17 tasks
+Completed: 23/24 tasks
 
-Completion Rate: 94%
+Completion Rate: 96%
 
-Last Updated: February 6, 2026
+Last Updated: February 18, 2026
